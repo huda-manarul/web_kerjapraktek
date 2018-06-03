@@ -15,6 +15,12 @@ class Mahasiswa extends CI_Controller {
 		$data['user'] = $this->query->GetdataMhs()->result();
 		$this->load->view('layout/mahasiswa_header');
 		$this->load->view('mahasiswa/datamahasiswa',$data);
-	}//
+	}
+
+	public function informasi(){
+		$data['user'] = $this->query->Getdatainfo()->result();
+		$this->load->view('layout/mahasiswa_header');
+		$this->load->view('mahasiswa/daftarberita',$data);
+	}
 
 }

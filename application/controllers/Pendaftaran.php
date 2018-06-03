@@ -47,19 +47,37 @@ class Pendaftaran extends CI_Controller {
 	}
 
 
-	public function daftarSidangKP()
-	{
+	public function daftarSidangKP(){
 		$data['judul'] = "Halaman pendaftaran sidang kerja praktek";
 		$this->load->view('layout/main_header',$data);
 		$this->load->view('pendaftaran/sidang',$data);
 	}
 
-	public function inputDosbing()
-	{
+	public function prosesdaftarSidangKP(){
+		$nim = $this->input->post('nim');
+		$judul = $this->input->post('judul');
+		echo $nim." ".$judul;
+		
+	}
+
+
+	public function inputDosbing(){
 		$data['judul'] = "Halaman pendaftaran sidang kerja praktek";
 		$data['user'] = $this->query->GetdataDosen()->result();
 		$this->load->view('layout/main_header',$data);
 		$this->load->view('pendaftaran/dosbing',$data);
+
+	}
+	public function prosesinputdosbing(){
+		$nim = $this->input->post('nim');
+		$dosbing = $this->input->post('nama_dosen');
+		$data = array(
+			'nim' => $nim,
+			'nama_dosen' => $dosbing
+		);
+		$this->query->Insertdatadosbing($data,'data_mahasiswa_dosbing');
+		redirect(base_url(),'refresh');
+
 	}
 
 	public function login()

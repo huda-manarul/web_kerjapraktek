@@ -1,7 +1,7 @@
 <div class="container horizontal-centered">
   <div class="col-lg-7"> 
     <h3><?php echo $judul ?></h3><hr>
-    <form action="<?php echo base_url().'kerjapraktek/prosesdaftarkp' ?>" method="post" >
+    <form action="<?php echo base_url().'pendaftaran/prosesdaftarkp' ?>" method="post" >
       <div class="form-group">
         <label for="jenis">Pilih Pendaftaran:</label>
         <select class="form-control " name="jenis">

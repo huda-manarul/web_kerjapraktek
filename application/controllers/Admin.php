@@ -19,7 +19,7 @@ class Admin extends CI_Controller {
 
 	public function datadosen(){
 		$data['judul'] = "Daftar Dosen Pembimbing kerja praktek";
-		$data['user'] = $this->query->GetdataDosen()->result();
+		//$data['user'] = $this->query->GetdataDosen()->result();
 		$this->load->view('layout/admin_header');
 		$this->load->view('admin/datadosen',$data);
 	}

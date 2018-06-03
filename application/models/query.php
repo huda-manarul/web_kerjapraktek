@@ -11,6 +11,11 @@ class query extends CI_Controller {
 	{
 		$this->db->insert($table,$data);
 	}
+
+	public function Insertdatadosbing($data,$table)
+	{
+		$this->db->insert($table,$data);
+	}
 	
 	public function cek_login($table,$where){		
 		return $this->db->get_where($table,$where);
@@ -28,15 +33,12 @@ class query extends CI_Controller {
 		return $this->db->get('data_informasi');
 	}
 
-	// public function InsertdataInfo($data,$table)
-	// {
-	// 	$this->db->insert($table,$data);
-	// }
 
-	function edit_data($where,$table){		
+	public function edit_data($where,$table){		
 		return $this->db->get_where($table,$where);
 	}
-	function update_data($where,$data,$table){
+
+	public function update_data($where,$data,$table){
 		$this->db->where($where);
 		$this->db->update($table,$data);
 	}	

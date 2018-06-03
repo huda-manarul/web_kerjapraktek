@@ -24,7 +24,7 @@
   <div class="nav-scroller bg-white box-shadow">
     <nav class="nav nav-underline">
       <a class="nav-link active" href="<?php echo base_url().'admin/' ?>">Data Mahasiswa</a>
-      <a class="nav-link" href="#">Informasi</a>
+      <a class="nav-link" href="<?php echo base_url().'mahasiswa/informasi' ?>">Informasi</a>
       <a class="nav-link" href="#">Pertanyaan</a>
     </nav>
   </div>
