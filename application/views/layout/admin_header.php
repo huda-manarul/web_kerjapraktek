@@ -25,8 +25,8 @@
     <nav class="nav nav-underline">
       <a class="nav-link active" href="<?php echo base_url().'admin/' ?>">Data Mahasiswa KP</a>
       <a class="nav-link" href="<?php echo base_url().'admin/datadosen' ?>">Data Dosen Pembimbing</a>
-      <a class="nav-link" href="#">Data Sidang KP</a>
-      <a class="nav-link" href="<?php echo base_url().'admin/informasi' ?>">Edit Informasi</a>
+      <a class="nav-link" href="<?php echo base_url().'admin/datasidang' ?>">Data Sidang KP</a>
+      <a class="nav-link" href="<?php echo base_url().'admin/tambahberita' ?>">Tambah Informasi</a>
     </nav>
   </div>
   <br><br>

@@ -52,6 +52,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 */
 $route['default_controller'] = 'pendaftaran';
+$route['login'] = 'login';
+$route['upload'] = 'upload';
 $route['admin'] = 'admin';
 $route['mahasiswa'] = 'mahasiswa';
 
